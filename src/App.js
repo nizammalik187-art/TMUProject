@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import Home from "./Home";
 import CreateBike from "./components/CreateBike";
 import Service from "./components/Service";
-import Team from "./components/Team";
 import Footer from "./components/Footer";
 import MyCRright from "./components/MyCRright";
 import Bikes from "./components/Bikes";

@@ -1,5 +1,5 @@
 import './App.css';
-import Spinner from './components/Spinner';
+// import Spinner from './components/Spinner';
 import React, { useState, useEffect } from 'react';
 import HeaderCarousel from './components/HeaderCarousel'
 
@@ -10,9 +10,9 @@ import Appointment from './components/Appointment';
 import ModelVideo from './components/ModelVideo';
 import Testimonial from './components/Testimonial';
 import Blog from './components/Blog';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Team from './components/Team';
-import MyCRright from './components/MyCRright';
+// import MyCRright from './components/MyCRright';
 import Bikes from './components/Bikes';
 
 

@@ -23,7 +23,7 @@ const Service = () => {
                 <div class="service-content-inner">
                   <h5 class="mb-4">Message Therapy</h5>
                   <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                  <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                  <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
               </div>
             </div>
@@ -37,7 +37,7 @@ const Service = () => {
                 <div class="service-content-inner">
                   <h5 class="mb-4">Physiotherapy</h5>
                   <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                  <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                  <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Service = () => {
                 <div class="service-content-inner">
                   <h5 class="mb-4">Heat & Cold Therapy</h5>
                   <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                  <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                  <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
               </div>
             </div>
@@ -65,14 +65,14 @@ const Service = () => {
                 <div class="service-content-inner">
                   <h5 class="mb-4">Chiropatic Therapy</h5>
                   <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                  <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                  <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Services More</a>
+            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/">Services More</a>
           </div>
         </div>
       </div>

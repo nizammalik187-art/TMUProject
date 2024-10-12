@@ -30,7 +30,7 @@ const Appointment = () => {
                         “Discover the joy of biking – exceptional rides for exceptional journeys..</p>
                     </div>
                     <div class="text-start mb-4">
-                      <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
+                      <a href="/" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
                     </div>
                   </div>
                 </div>

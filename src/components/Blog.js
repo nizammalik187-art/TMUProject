@@ -20,11 +20,11 @@ const Blog = () => {
               <div class="blog-centent p-4">
                 <div class="d-flex justify-content-between mb-4">
                   <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                  <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+                  <a href="/" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
                 </div>
-                <a href="#" class="h4">Remove back Pain While Working on o physio</a>
+                <a href="/" class="h4">Remove back Pain While Working on o physio</a>
                 <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
-                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
               </div>
             </div>
           </div>
@@ -36,11 +36,11 @@ const Blog = () => {
               <div class="blog-centent p-4">
                 <div class="d-flex justify-content-between mb-4">
                   <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                  <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+                  <a href="/" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
                 </div>
-                <a href="#" class="h4">Benefits of a weekly physiotherapy session</a>
+                <a href="/" class="h4">Benefits of a weekly physiotherapy session</a>
                 <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
-                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
               </div>
             </div>
           </div>
@@ -52,11 +52,11 @@ const Blog = () => {
               <div class="blog-centent p-4">
                 <div class="d-flex justify-content-between mb-4">
                   <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                  <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+                  <a href="/" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
                 </div>
-                <a href="#" class="h4">Regular excercise can slow ageing process</a>
+                <a href="/" class="h4">Regular excercise can slow ageing process</a>
                 <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
-                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
               </div>
             </div>
           </div>

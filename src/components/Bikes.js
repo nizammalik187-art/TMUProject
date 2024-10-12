@@ -45,7 +45,7 @@ const Bikes = () => {
                     <p class="mb-4">{bike.bikeDescription}</p>
                     <p class="mb-2"><strong>Price:</strong> {bike.bikePrice}/day</p>
                     <p class="mb-4"><strong>Location:</strong> Nainital</p>
-                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Rent Now</a>
+                    <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Rent Now</a>
                   </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const Bikes = () => {
                   <p class="mb-4">A reliable bike for all your city rides. Perfect for daily commutes and short trips.</p>
                   <p class="mb-2"><strong>Price:</strong> ₹500/day</p>
                   <p class="mb-4"><strong>Location:</strong> Nainital</p>
-                  <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Rent Now</a>
+                  <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Rent Now</a>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ const Bikes = () => {
                   <p class="mb-4">A reliable bike for all your city rides. Perfect for daily commutes and short trips.</p>
                   <p class="mb-2"><strong>Price:</strong> ₹500/day</p>
                   <p class="mb-4"><strong>Location:</strong> Nainital</p>
-                  <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Rent Now</a>
+                  <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Rent Now</a>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ const Bikes = () => {
 
 
           {/* <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">View More Bikes</a>
+            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/">View More Bikes</a>
           </div> */}
         </div>
 

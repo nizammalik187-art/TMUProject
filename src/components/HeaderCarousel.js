@@ -49,7 +49,7 @@ const HeaderCarousel = () => {
             </p>
             <a
               className="btn btn-primary rounded-pill text-white py-3 px-5"
-              href="#"
+              href="/"
             >
               Book Your Bike
             </a>
@@ -74,7 +74,7 @@ const HeaderCarousel = () => {
             </p>
             <a
               className="btn btn-primary rounded-pill text-white py-3 px-5"
-              href="#"
+              href="/"
             >
               Book Appointment
             </a>
@@ -99,7 +99,7 @@ const HeaderCarousel = () => {
             </p>
             <a
               className="btn btn-primary rounded-pill text-white py-3 px-5"
-              href="#"
+              href="/"
             >
               Book Appointment
             </a>
@@ -123,7 +123,7 @@ const HeaderCarousel = () => {
             </p>
             <a
               className="btn btn-primary rounded-pill text-white py-3 px-5"
-              href="#"
+              href="/"
             >
               Book Appointment
             </a>
@@ -147,7 +147,7 @@ const HeaderCarousel = () => {
             </p>
             <a
               className="btn btn-primary rounded-pill text-white py-3 px-5"
-              href="#"
+              href="/"
             >
               Book Appointment
             </a>

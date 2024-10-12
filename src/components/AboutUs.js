@@ -26,7 +26,7 @@ const AboutUs = () => {
                 <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> We Provide Only new bike .</p>
                 <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> You can go anywhere </p>
               </div>
-              <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
+              <a href="/" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
             </div>
           </div>
         </div>

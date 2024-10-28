@@ -1,16 +1,59 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
+
 const Bikes = () => {
   const [bikes, setBikes] = useState([]);
 
   useEffect(() => {
     const fetchBike = async () => {
       try {
-        const response = await axios.get('http://localhost:8090/api/bikes');
-        console.log(response.data)
+        // const response = await axios.get('http://localhost:8090/api/bikes');
+        // console.log(response.data)
 
-        setBikes(response.data);
+        // setBikes(response.data);
+        const data=[
+          {
+          _id: 1,
+          bikeName:"Honda Activa",
+          bikeDescription:"Good condition leatest Model",
+          bikePrice:600,
+          bikeImage:"b1.png"         
+        },
+        {
+          _id: 2,
+          bikeName:"Roya Enfield hunter",
+          bikeDescription:"Good condition leatest Model",
+          bikePrice:600     ,
+          bikeImage:"b5.png"         
+
+        }
+        , {
+          _id: 3,
+          bikeName:"Tvs Ntorq",
+          bikeDescription:"Good condition leatest Model",
+          bikePrice:600,
+          bikeImage:"b2.jpeg"         
+
+        }
+        ,
+        {
+          _id: 4,
+          bikeName:"Tvs Jupiter",
+          bikeDescription:"Good condition leatest Model",
+          bikePrice:600,
+          bikeImage:"b3.jpeg"         
+
+        }, {
+          _id: 5,
+          bikeName:"Roya Enfield Bullet (Classic Single)",
+          bikeDescription:"Good condition leatest Model",
+          bikePrice:600,
+          bikeImage:"b4.jpeg"         
+
+        }
+      ]
+        setBikes( data);
 
       } catch (err) {
         console.log("Error:", err)
@@ -37,7 +80,8 @@ const Bikes = () => {
             <div key={bike._id} class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
               <div class="bike-card rounded">
                 <div class="bike-img rounded-top">
-                  <img src={`http://localhost:8090/uploads/${bike.bikeImage}`} class="img-fluid rounded-top w-100" alt="Hero Honda Bike" />
+                  {/* <img src={`http://localhost:8090/uploads/${bike.bikeImage}`} class="img-fluid rounded-top w-100" alt="Hero Honda Bike" /> */}
+                  <img src={`img/${bike.bikeImage}`} class="img-fluid rounded-top w-100" alt="Hero Honda Bike" />
                 </div>
                 <div class="bike-content rounded-bottom bg-light p-4">
                   <div class="bike-content-inner">

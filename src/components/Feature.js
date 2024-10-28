@@ -9,7 +9,16 @@ const Feature = () => {
             <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
           </div>
           <h1 class="display-3 mb-4">Why Choose Us? Get Your Bike on a call</h1>
-          <p class="mb-0">Explore the city on two wheels with our top-notch bike rentals. Whether you're a local or a visitor, our bikes are perfect for discovering new places and enjoying the ride. Choose from a variety of models and experience the freedom of cycling!</p>
+          <p class="mb-0">We are committed to providing high-quality,
+            distinctive products that could potentially used in a
+            variety of applications. This can be utilised for a
+            variety of purposes, including roofing. wall cladding,
+            cold storage, clean rooms and industrial and
+            commercial building insulation. PBPL manufactures
+            PUF panels with sophisticated advanced technology
+            and cutting-edge gear. As a result, we are able to
+            provide consistently high-quality Puf panels and
+            unparalleled customer service</p>
         </div>
         <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">

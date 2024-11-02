@@ -3,7 +3,7 @@ import React from "react";
 const StaticButtons = () => {
   const phoneNumber = "+919389691797";  // Replace with your phone number
   const whatsappNumber = "+919389691797";  // Replace with your WhatsApp number
-  const message = "Hello! I'm interested in Booking of a bike.";  // Custom message
+  const message = "Hello! I’m interested in renting a bike from your service. Could you provide me with more details on the available options, pricing, and booking process? Thank you!";
 
   return (
     <div style={styles.container}>

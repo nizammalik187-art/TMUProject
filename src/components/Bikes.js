@@ -89,7 +89,7 @@ const Bikes = () => {
                     <p class="mb-4">{bike.bikeDescription}</p>
                     <p class="mb-2"><strong>Price:</strong> {bike.bikePrice}/day</p>
                     <p class="mb-4"><strong>Location:</strong> Nainital</p>
-                    <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Rent Now</a>
+                    <a  class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2" href={`tel:+919389691767`} >Rent Now</a>
                   </div>
                 </div>
               </div>

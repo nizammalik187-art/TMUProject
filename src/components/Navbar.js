@@ -21,7 +21,7 @@ const Navbar = () => {
             <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
             {/* <NavLink to="/createBike" className="nav-item nav-link">Create Bike</NavLink> */}
             <NavLink to="/bikes" className="nav-item nav-link">Bikes</NavLink>
-            <NavLink to="/addReview" className="nav-item nav-link">Add Review</NavLink>
+            {/* <NavLink to="/addReview" className="nav-item nav-link">Add Review</NavLink> */}
             <NavLink to="/contact" className="nav-item nav-link">Contact Us</NavLink>
           </div>
           <NavLink to="bikes" type='button' className="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Your Bike</NavLink>

@@ -30,7 +30,7 @@ const styles = {
   container: {
     position: "fixed",
     top: "70px",
-    right: "10px",
+    right: "2%",
     display: "flex",
     flexDirection: "column",
     gap: "15px",

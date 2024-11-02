@@ -3,13 +3,13 @@ import React from "react";
 const StaticButtons = () => {
   const phoneNumber = "+919389691797";  // Replace with your phone number
   const whatsappNumber = "+919389691797";  // Replace with your WhatsApp number
-  const message = "Hello! I'm interested in Booking of a bike .";  // Custom message
+  const message = "Hello! I'm interested in Booking of a bike.";  // Custom message
 
   return (
     <div style={styles.container}>
       {/* Call Button */}
       <a href={`tel:${phoneNumber}`} style={{ ...styles.button, ...styles.callButton }} aria-label="Call">
-        <img src="img/icons8-whatsapp-48.png" alt="Call" style={styles.icon} />
+        <img src="img/icons8-call-94.png" alt="Call" style={styles.icon} />
       </a>
 
       {/* WhatsApp Button with pre-filled message */}
@@ -20,7 +20,7 @@ const StaticButtons = () => {
         rel="noopener noreferrer"
         aria-label="WhatsApp"
       >
-        <img src="img/icons8-call-94.png" alt="WhatsApp" style={styles.icon} />
+        <img src="img/icons8-whatsapp-48.png" alt="WhatsApp" style={styles.icon} />
       </a>
     </div>
   );
@@ -58,6 +58,38 @@ const styles = {
     "0%": { transform: "scale(1)" },
     "50%": { transform: "scale(1.1)" },
     "100%": { transform: "scale(1)" },
+  },
+  
+  // Media queries for responsiveness
+  "@media (max-width: 768px)": {
+    container: {
+      top: "20px", // Move buttons closer to the top on smaller screens
+      right: "5px",
+      gap: "10px",
+    },
+    button: {
+      padding: "10px", // Reduce button size on smaller screens
+    },
+    icon: {
+      width: "20px",
+      height: "20px",
+    },
+  },
+  
+  "@media (max-width: 480px)": {
+    container: {
+      top: "10px",
+      right: "5px",
+      gap: "8px",
+      flexDirection: "row",  // Arrange buttons in a row on very small screens
+    },
+    button: {
+      padding: "8px",
+    },
+    icon: {
+      width: "18px",
+      height: "18px",
+    },
   },
 };
 

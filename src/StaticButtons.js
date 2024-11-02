@@ -1,20 +1,21 @@
 import React from "react";
 
 const StaticButtons = () => {
-  const phoneNumber = "+1234567890";  // Replace with your phone number
-  const whatsappNumber = "+1234567890";  // Replace with your WhatsApp number
+  const phoneNumber = "+919389691797";  // Replace with your phone number
+  const whatsappNumber = "+919389691797";  // Replace with your WhatsApp number
+  const message = "Hello! I'm interested in Booking of a bike .";  // Custom message
 
   return (
     <div style={styles.container}>
       {/* Call Button */}
-      <a href={`tel:${phoneNumber}`} style={styles.button} aria-label="Call">
+      <a href={`tel:${phoneNumber}`} style={{ ...styles.button, ...styles.callButton }} aria-label="Call">
         <img src="img/icons8-whatsapp-48.png" alt="Call" style={styles.icon} />
       </a>
 
-      {/* WhatsApp Button */}
+      {/* WhatsApp Button with pre-filled message */}
       <a
-        href={`https://wa.me/${whatsappNumber}`}
-        style={styles.button}
+        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
+        style={{ ...styles.button, ...styles.whatsappButton }}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
@@ -53,13 +54,11 @@ const styles = {
     width: "28px",
     height: "28px",
   },
-  // Keyframes for animations
   "@keyframes pulse": {
     "0%": { transform: "scale(1)" },
     "50%": { transform: "scale(1.1)" },
     "100%": { transform: "scale(1)" },
   },
 };
-
 
 export default StaticButtons;

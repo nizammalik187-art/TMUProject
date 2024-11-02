@@ -10,6 +10,7 @@ import MyCRright from "./components/MyCRright";
 import Bikes from "./components/Bikes";
 import AboutUs from "./components/AboutUs";
 import Appointment from "./components/Appointment";
+import StaticButtons from "./StaticButtons";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <Header />
       <Navbar />
+      <StaticButtons/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/createBike" element={<CreateBike />} />

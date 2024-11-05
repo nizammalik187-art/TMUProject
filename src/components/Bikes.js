@@ -55,7 +55,7 @@ const Bikes = () => {
           _id: 5,
           bikeName:"Bajaj Vikrant",
           bikeDescription:"Good condition leatest Model",
-          bikePrice:1200,
+          bikePrice:800,
           bikeImage:"b6.jpeg"         
 
         }

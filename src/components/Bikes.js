@@ -24,7 +24,7 @@ const Bikes = () => {
           _id: 2,
           bikeName:"Roya Enfield hunter",
           bikeDescription:"Good condition leatest Model",
-          bikePrice:600     ,
+          bikePrice:1200     ,
           bikeImage:"b5.png"         
 
         }
@@ -46,10 +46,17 @@ const Bikes = () => {
 
         }, {
           _id: 5,
-          bikeName:"Roya Enfield Bullet (Classic Single)",
+          bikeName:"Roya Enfield Bullet (Classic Signal)",
           bikeDescription:"Good condition leatest Model",
-          bikePrice:600,
+          bikePrice:1200,
           bikeImage:"b4.jpeg"         
+
+        }, {
+          _id: 5,
+          bikeName:"Bajaj Vikrant",
+          bikeDescription:"Good condition leatest Model",
+          bikePrice:1200,
+          bikeImage:"b6.jpeg"         
 
         }
       ]

@@ -4,7 +4,7 @@ const StaticButtons = () => {
   const phoneNumber = "+919389691797";  // Replace with your phone number
   const whatsappNumber = "+919389691797";  // Replace with your WhatsApp number
   const message = "Hello! I’m interested in renting a bike from your service. Could you provide me with more details on the available options, pricing, and booking process? Thank you!";
-
+  const instagramUrl = "https://www.instagram.com/yourpage"; 
   return (
     <div style={styles.container}>
       {/* Call Button */}
@@ -21,6 +21,15 @@ const StaticButtons = () => {
         aria-label="WhatsApp"
       >
         <img src="img/icons8-whatsapp-48.png" alt="WhatsApp" style={styles.icon} />
+      </a>
+      <a
+        href={instagramUrl}
+        style={{ ...styles.button, ...styles.instagramButton }}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+        <img src="img/insta.png" alt="WhatsApp" style={styles.icon} />
       </a>
     </div>
   );
@@ -49,6 +58,9 @@ const styles = {
   },
   whatsappButton: {
     backgroundColor: "#25D366", // WhatsApp green
+  },
+  instagramButton: {
+    backgroundColor: "rgb(227 184 198)", // Instagram pink
   },
   icon: {
     width: "28px",

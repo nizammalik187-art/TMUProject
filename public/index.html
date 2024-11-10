@@ -6,7 +6,7 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
+  <meta name="description" content="Rent bikes easily with our bike rental app." />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,26 @@
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
   <div id="root"></div>
-
+<!-- Structured Data JSON-LD -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bike Rental App",
+    "url": "https://yourdomain.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Bike Lane",
+      "addressLocality": "YourCity",
+      "addressRegion": "YourState",
+      "postalCode": "12345"
+    },
+    "description": "Rent bikes easily with our bike rental app.",
+    "telephone": "+1234567890"
+  }
+</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>

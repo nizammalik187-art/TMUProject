@@ -19,7 +19,7 @@ const Navbar = () => {
             <NavLink to="/" className="nav-item nav-link" activeClassName="active">Home</NavLink>
             <NavLink to="/about" className="nav-item nav-link">About</NavLink>
             <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
-            {/* <NavLink to="/createBike" className="nav-item nav-link">Create Bike</NavLink> */}
+            <NavLink to="/createBike" className="nav-item nav-link">Create Bike</NavLink>
             <NavLink to="/bikes" className="nav-item nav-link">Bikes</NavLink>
             {/* <NavLink to="/addReview" className="nav-item nav-link">Add Review</NavLink> */}
             <NavLink to="/contact" className="nav-item nav-link">Contact Us</NavLink>

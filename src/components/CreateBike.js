@@ -47,7 +47,6 @@ const CreateBike = () => {
       bikeImage: formData.bikeImage,
       bikeDescription: formData.bikeDescription
     });
-
     try {
       const response = await axios.post('http://localhost:8090/api/bike/create', data, {
         headers: {

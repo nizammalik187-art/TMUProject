@@ -14,6 +14,7 @@ import Blog from './components/Blog';
 import Team from './components/Team';
 // import MyCRright from './components/MyCRright';
 import Bikes from './components/Bikes';
+import Advertisement from './components/Advertisement';
 
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
     <div className="App">
       {/* {loading ? <Spinner /> : ""} */}
       <HeaderCarousel />
+      <Advertisement/>
       <Bikes />
       <Service />
       <AboutUs />

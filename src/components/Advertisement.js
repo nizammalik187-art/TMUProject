@@ -11,7 +11,7 @@ function Advertisement() {
         className="ad-marquee"
       >
         <span className="ad-text">
-          🚴‍♂️ Rent the Best Bikes From here and get Flat 100% Off Restaurant Sky High 🚴‍♀️
+          🚴‍♂️ Rent the Best Bikes From here and get Flat 10% Off Restaurant Sky High 🚴‍♀️
         </span>
       </Marquee>
     </div>

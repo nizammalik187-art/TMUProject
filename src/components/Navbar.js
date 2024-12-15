@@ -1,7 +1,16 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const isLoggedIn = localStorage.getItem('auth') === 'yes';
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem('auth'); // Clear the auth key
+    alert('You have been logged out.');
+    navigate('/login'); // Redirect to login page
+  };
+
   return (
     <div className="container-fluid position-relative p-0">
       <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
@@ -21,14 +30,27 @@ const Navbar = () => {
             <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
             <NavLink to="/createBike" className="nav-item nav-link">Create Bike</NavLink>
             <NavLink to="/bikes" className="nav-item nav-link">Bikes</NavLink>
-            {/* <NavLink to="/addReview" className="nav-item nav-link">Add Review</NavLink> */}
             <NavLink to="/contact" className="nav-item nav-link">Contact Us</NavLink>
+
+            {isLoggedIn ? (
+              <span
+                onClick={handleLogout}
+                className="nav-item nav-link"
+                style={{ cursor: 'pointer' }}
+              >
+                Logout
+              </span>
+            ) : (
+              <NavLink to="/login" className="nav-item nav-link">Login</NavLink>
+            )}
           </div>
-          <NavLink to="bikes" type='button' className="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Your Bike</NavLink>
+          <NavLink to="bikes" type="button" className="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">
+            Book Your Bike
+          </NavLink>
         </div>
       </nav>
     </div>
   );
-}
+};
 
 export default Navbar;

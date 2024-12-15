@@ -13,7 +13,7 @@ const Service = () => {
             Whether you're a local or a visitor, our bikes are perfect for discovering new places and enjoying the ride.
             Choose from a variety of models and experience the freedom of cycling!</p>
         </div>
-        <div class="row g-4 justify-content-center">
+        {/* <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
             <div class="service-item rounded">
               <div class="service-img rounded-top">
@@ -74,7 +74,7 @@ const Service = () => {
           <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
             <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/">Services More</a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

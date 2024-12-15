@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const CreateBike = () => {
   const [formData, setFormData] = useState({
@@ -8,23 +9,33 @@ const CreateBike = () => {
     bikePrice: '',
     bikeLocation: '',
     bikeDescription: '',
-    bikeImage: null
+    bikeImage: null,
+    available: true, // Add available field with a default value
   });
+
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData({
       ...formData,
-      [id]: value
+      [id]: value,
     });
   };
 
   const handleFileChange = (e) => {
     setFormData({
       ...formData,
-      bikeImage: e.target.files[0]
+      bikeImage: e.target.files[0],
     });
     console.log('Selected file:', e.target.files[0]); // Debugging file input
+  };
+
+  const handleCheckboxChange = (e) => {
+    setFormData({
+      ...formData,
+      available: e.target.checked, // Update the `available` field based on checkbox
+    });
   };
 
   const handleSubmit = async (e) => {
@@ -37,38 +48,23 @@ const CreateBike = () => {
     data.append('bikeLocation', formData.bikeLocation);
     data.append('bikeImage', formData.bikeImage);
     data.append('bikeDescription', formData.bikeDescription);
+    data.append('available', formData.available);
 
-    // Debugging form data before submission
-    console.log('Form Data:', {
-      bikeName: formData.bikeName,
-      bikeType: formData.bikeType,
-      bikePrice: formData.bikePrice,
-      bikeLocation: formData.bikeLocation,
-      bikeImage: formData.bikeImage,
-      bikeDescription: formData.bikeDescription
-    });
     try {
-      const response = await axios.post('http://localhost:8090/api/bike/create', data, {
+      const response = await axios.post('https://nitinapi.onrender.com/api/bike/create', data, {
         headers: {
-          'Content-Type': 'multipart/form-data'
-        }
+          'Content-Type': 'multipart/form-data',
+        },
       });
       console.log('Response:', response.data);
-      // Debugging server response
       alert('Bike created successfully!');
-      // Clear the form
-      // setFormData({
-      //   bikeName: '',
-      //   bikeType: '',
-      //   bikePrice: '',
-      //   bikeLocation: '',
-      //   bikeImage: null
-      // });
+      navigate('/bikeList'); // Navigate to the bike list page
     } catch (error) {
       console.error('There was an error creating the bike!', error);
       alert('Failed to create bike');
     }
   };
+
   return (
     <div className="container" style={{ marginTop: '112px' }}>
       <div className="admin-form-container wow fadeInUp">
@@ -133,7 +129,7 @@ const CreateBike = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="bikeLocation" className="form-label">Description</label>
+            <label htmlFor="bikeDescription" className="form-label">Description</label>
             <textarea
               className="form-control"
               id="bikeDescription"
@@ -143,11 +139,26 @@ const CreateBike = () => {
               required
             />
           </div>
+          <div className="mb-3">
+            <label className="form-label">Available</label>
+            <div className="form-check">
+              <input
+                type="checkbox"
+                className="form-check-input"
+                id="available"
+                checked={formData.available}
+                onChange={handleCheckboxChange}
+              />
+              <label className="form-check-label" htmlFor="available">
+                Is Available
+              </label>
+            </div>
+          </div>
           <button type="submit" className="btn btn-primary btn-create rounded-pill text-white">Create Bike</button>
         </form>
       </div>
     </div>
   );
-}
+};
 
 export default CreateBike;

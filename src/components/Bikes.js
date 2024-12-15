@@ -8,58 +8,58 @@ const Bikes = () => {
   useEffect(() => {
     const fetchBike = async () => {
       try {
-        // const response = await axios.get('http://localhost:8090/api/bikes');
-        // console.log(response.data)
+        const response = await axios.get('https://nitinapi.onrender.com/api/bikes');
+        console.log(response.data)
 
-        // setBikes(response.data);
-        const data=[
-          {
-          _id: 1,
-          bikeName:"Honda Activa",
-          bikeDescription:"Good condition leatest Model",
-          bikePrice:600,
-          bikeImage:"b1.png"         
-        },
-        {
-          _id: 2,
-          bikeName:"Roya Enfield hunter",
-          bikeDescription:"Good condition leatest Model",
-          bikePrice:1200     ,
-          bikeImage:"b5.png"         
+        setBikes(response.data);
+      //   const data=[
+      //     {
+      //     _id: 1,
+      //     bikeName:"Honda Activa",
+      //     bikeDescription:"Good condition leatest Model",
+      //     bikePrice:600,
+      //     bikeImage:"b1.png"         
+      //   },
+      //   {
+      //     _id: 2,
+      //     bikeName:"Roya Enfield hunter",
+      //     bikeDescription:"Good condition leatest Model",
+      //     bikePrice:1200     ,
+      //     bikeImage:"b5.png"         
 
-        }
-        , {
-          _id: 3,
-          bikeName:"Tvs Ntorq",
-          bikeDescription:"Good condition leatest Model",
-          bikePrice:600,
-          bikeImage:"b2.jpeg"         
+      //   }
+      //   , {
+      //     _id: 3,
+      //     bikeName:"Tvs Ntorq",
+      //     bikeDescription:"Good condition leatest Model",
+      //     bikePrice:600,
+      //     bikeImage:"b2.jpeg"         
 
-        }
-        ,
-        {
-          _id: 4,
-          bikeName:"Tvs Jupiter",
-          bikeDescription:"Good condition leatest Model",
-          bikePrice:600,
-          bikeImage:"b3.jpeg"         
+      //   }
+      //   ,
+      //   {
+      //     _id: 4,
+      //     bikeName:"Tvs Jupiter",
+      //     bikeDescription:"Good condition leatest Model",
+      //     bikePrice:600,
+      //     bikeImage:"b3.jpeg"         
 
-        }, {
-          _id: 5,
-          bikeName:"Roya Enfield Bullet (Classic Signal)",
-          bikeDescription:"Good condition leatest Model",
-          bikePrice:1200,
-          bikeImage:"b4.jpeg"         
+      //   }, {
+      //     _id: 5,
+      //     bikeName:"Roya Enfield Bullet (Classic Signal)",
+      //     bikeDescription:"Good condition leatest Model",
+      //     bikePrice:1200,
+      //     bikeImage:"b4.jpeg"         
 
-        }, {
-          _id: 5,
-          bikeName:"Bajaj Vikrant",
-          bikeDescription:"Good condition leatest Model",
-          bikePrice:800,
-          bikeImage:"b6.jpeg"         
+      //   }, {
+      //     _id: 5,
+      //     bikeName:"Bajaj Vikrant",
+      //     bikeDescription:"Good condition leatest Model",
+      //     bikePrice:800,
+      //     bikeImage:"b6.jpeg"         
 
-        }
-      ]
+      //   }
+      // ]
         setBikes( data);
 
       } catch (err) {
@@ -83,25 +83,36 @@ const Bikes = () => {
             Choose from a variety of models and experience the freedom of cycling!</p> */}
         </div>
         <div class="row g-4 justify-content-center">
-          {bikes.map((bike) => (
-            <div key={bike._id} class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="bike-card rounded">
-                <div class="bike-img rounded-top">
-                  {/* <img src={`http://localhost:8090/uploads/${bike.bikeImage}`} class="img-fluid rounded-top w-100" alt="Hero Honda Bike" /> */}
-                  <img src={`img/${bike.bikeImage}`} class="img-fluid rounded-top w-100" alt="Hero Honda Bike" />
-                </div>
-                <div class="bike-content rounded-bottom bg-light p-4">
-                  <div class="bike-content-inner">
-                    <h5 class="mb-4">{bike.bikeName}</h5>
-                    <p class="mb-4">{bike.bikeDescription}</p>
-                    <p class="mb-2"><strong>Price:</strong> {bike.bikePrice}/day</p>
-                    <p class="mb-4"><strong>Location:</strong> Nainital</p>
-                    <a  class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2" href={`tel:+919389691767`} >Rent Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+        {bikes.map((bike) => (
+  <div key={bike._id} className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+    <div className="bike-card rounded">
+      <div className="bike-img rounded-top">
+        <img 
+          src={`https://nitinapi.onrender.com/uploads/${bike.bikeImage}`} 
+          className="img-fluid rounded-top w-100" 
+          alt={bike.bikeName} 
+        />
+      </div>
+      <div className="bike-content rounded-bottom bg-light p-4">
+        <div className="bike-content-inner">
+          <h5 className="mb-4">{bike.bikeName}</h5>
+          <p className="mb-4">{bike.bikeDescription}</p>
+          <p className="mb-2"><strong>Price:</strong> ₹{bike.bikePrice}/day</p>
+          <p className="mb-2"><strong>Location:</strong> {bike.bikeLocation}</p>
+          <p className={`mb-4 ${bike.available ? 'text-success' : 'text-danger'}`}>
+            <strong>Status:</strong> {bike.available ? 'Available' : 'Not Available'}
+          </p>
+          <a 
+            className="btn btn-primary rounded-pill text-white py-2 px-4 mb-2" 
+            href={`tel:+919389691767`}
+          >
+            Rent Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+))}
 
           {/* <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
             <div class="bike-card rounded">

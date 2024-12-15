@@ -60,7 +60,7 @@ const Bikes = () => {
 
       //   }
       // ]
-        setBikes( data);
+        setBikes( response);
 
       } catch (err) {
         console.log("Error:", err)

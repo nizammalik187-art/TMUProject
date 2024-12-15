@@ -28,21 +28,22 @@ const Navbar = () => {
             <NavLink to="/" className="nav-item nav-link" activeClassName="active">Home</NavLink>
             <NavLink to="/about" className="nav-item nav-link">About</NavLink>
             <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
-            <NavLink to="/createBike" className="nav-item nav-link">Create Bike</NavLink>
             <NavLink to="/bikes" className="nav-item nav-link">Bikes</NavLink>
             <NavLink to="/contact" className="nav-item nav-link">Contact Us</NavLink>
 
             {isLoggedIn ? (
-              <span
+              <>
+            <NavLink to="/createBike" className="nav-item nav-link">Create Bike</NavLink>
+            <span
                 onClick={handleLogout}
                 className="nav-item nav-link"
                 style={{ cursor: 'pointer' }}
               >
                 Logout
               </span>
-            ) : (
-              <NavLink to="/login" className="nav-item nav-link">Login</NavLink>
-            )}
+              </>
+             
+            ) :""}
           </div>
           <NavLink to="bikes" type="button" className="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">
             Book Your Bike

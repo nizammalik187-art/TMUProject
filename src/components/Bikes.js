@@ -9,58 +9,10 @@ const Bikes = () => {
     const fetchBike = async () => {
       try {
         const response = await axios.get('https://nitinapi.onrender.com/api/bikes');
-        console.log(response.data)
+      
 
         setBikes(response.data);
-      //   const data=[
-      //     {
-      //     _id: 1,
-      //     bikeName:"Honda Activa",
-      //     bikeDescription:"Good condition leatest Model",
-      //     bikePrice:600,
-      //     bikeImage:"b1.png"         
-      //   },
-      //   {
-      //     _id: 2,
-      //     bikeName:"Roya Enfield hunter",
-      //     bikeDescription:"Good condition leatest Model",
-      //     bikePrice:1200     ,
-      //     bikeImage:"b5.png"         
-
-      //   }
-      //   , {
-      //     _id: 3,
-      //     bikeName:"Tvs Ntorq",
-      //     bikeDescription:"Good condition leatest Model",
-      //     bikePrice:600,
-      //     bikeImage:"b2.jpeg"         
-
-      //   }
-      //   ,
-      //   {
-      //     _id: 4,
-      //     bikeName:"Tvs Jupiter",
-      //     bikeDescription:"Good condition leatest Model",
-      //     bikePrice:600,
-      //     bikeImage:"b3.jpeg"         
-
-      //   }, {
-      //     _id: 5,
-      //     bikeName:"Roya Enfield Bullet (Classic Signal)",
-      //     bikeDescription:"Good condition leatest Model",
-      //     bikePrice:1200,
-      //     bikeImage:"b4.jpeg"         
-
-      //   }, {
-      //     _id: 5,
-      //     bikeName:"Bajaj Vikrant",
-      //     bikeDescription:"Good condition leatest Model",
-      //     bikePrice:800,
-      //     bikeImage:"b6.jpeg"         
-
-      //   }
-      // ]
-        setBikes( response);
+     
 
       } catch (err) {
         console.log("Error:", err)

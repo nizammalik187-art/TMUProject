@@ -8,7 +8,8 @@ const Navbar = () => {
   const handleLogout = () => {
     localStorage.removeItem('auth'); // Clear the auth key
     alert('You have been logged out.');
-    navigate('/login'); // Redirect to login page
+    navigate('/login');
+    navigate(0) // Redirect to login page
   };
 
   return (
@@ -26,13 +27,10 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
             <NavLink to="/" className="nav-item nav-link" activeClassName="active">Home</NavLink>
-            <NavLink to="/about" className="nav-item nav-link">About</NavLink>
-            <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
-            <NavLink to="/bikes" className="nav-item nav-link">Bikes</NavLink>
-            <NavLink to="/contact" className="nav-item nav-link">Contact Us</NavLink>
 
             {isLoggedIn ? (
               <>
+            <NavLink to="/bikeList" className="nav-item nav-link">Bikes</NavLink>
             <NavLink to="/createBike" className="nav-item nav-link">Create Bike</NavLink>
             <span
                 onClick={handleLogout}
@@ -43,7 +41,14 @@ const Navbar = () => {
               </span>
               </>
              
-            ) :""}
+            ) :
+            <>
+            <NavLink to="/contact" className="nav-item nav-link">Contact Us</NavLink>
+            <NavLink to="/about" className="nav-item nav-link">About</NavLink>
+            <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
+            <NavLink to="/bikes" className="nav-item nav-link">Bikes</NavLink>
+            
+            </>}
           </div>
           <NavLink to="bikes" type="button" className="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">
             Book Your Bike

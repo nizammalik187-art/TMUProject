@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const BikeList = () => {
   const [bikes, setBikes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   // Fetch bike listings
   useEffect(() => {
@@ -37,7 +39,7 @@ const BikeList = () => {
 
   // Edit bike (Navigate to edit page)
   const handleEdit = (id) => {
-    window.location.href = `/edit-bike/${id}`; // Assuming edit page routing
+    navigate(`/editBike/${id}`); // Navigate without reloading
   };
 
   // Toggle availability

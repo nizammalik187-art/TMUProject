@@ -68,7 +68,7 @@ const CreateBike = () => {
   return (
     <div className="container" style={{ marginTop: '112px' }}>
       <div className="admin-form-container wow fadeInUp">
-        <h2 className="admin-form-title">Create Bike Listing</h2>
+        <h2 className="admin-form-title">Create Bike </h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="bikeName" className="form-label">Bike Name</label>

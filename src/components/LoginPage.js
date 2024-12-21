@@ -29,7 +29,9 @@ const LoginPage = () => {
         localStorage.setItem('auth', 'yes');
         console.log(localStorage.getItem('auth'));
         alert('Login successful!');
-        navigate('/bikeList'); // Redirect to the dashboard or desired page
+        navigate('/bikeList');
+        navigate(0)
+         // Redirect to the dashboard or desired page
       } else {
         setError(response.data.message || 'Invalid email or password');
       }

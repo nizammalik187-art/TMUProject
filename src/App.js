@@ -16,22 +16,32 @@ import BikeList from "./components/BikeList";
 import LoginPage from "./components/LoginPage";
 import CreateBike from "./components/CreateBike";
 import ProtectedRoute from "./components/ProtectedRoute"; // Import the ProtectedRoute component
+import EditBike from "./components/EditBike";
 
 function App() {
+  const isLoggedIn = localStorage.getItem('auth') === 'yes';
+  
   return (
     <>
       <Header id='top' />
       <Navbar />
-      <StaticButtons />
+      {!isLoggedIn? <StaticButtons />:""}
+     
       <div className="main-content">
         <Routes>
+      {!isLoggedIn? 
+          <><Route path="/services" element={<Service />} />
+          <Route path="/contact" element={<Appointment />} />
+          
+          </>
+      
+      :""}
+
           <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Service />} />
           <Route path="/createBike" element={<CreateBike />} />
-          <Route path="/about" element={<AboutUs />} />
+          <Route path="/editBike/:id" element={<EditBike />} />
           <Route path="/bikes" element={<Bikes />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/contact" element={<Appointment />} />
           {/* Protect the bikeList route */}
           <Route
             path="/bikeList"

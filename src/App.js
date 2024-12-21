@@ -17,6 +17,7 @@ import LoginPage from "./components/LoginPage";
 import CreateBike from "./components/CreateBike";
 import ProtectedRoute from "./components/ProtectedRoute"; // Import the ProtectedRoute component
 import EditBike from "./components/EditBike";
+import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop component
 
 function App() {
   const isLoggedIn = localStorage.getItem('auth') === 'yes';
@@ -25,18 +26,18 @@ function App() {
     <>
       <Header id='top' />
       <Navbar />
-      {!isLoggedIn? <StaticButtons />:""}
-     
-      <div className="main-content">
-        <Routes>
-      {!isLoggedIn? 
-          <><Route path="/services" element={<Service />} />
-          <Route path="/contact" element={<Appointment />} />
-          
-          </>
-      
-      :""}
+      {!isLoggedIn ? <StaticButtons /> : ""}
 
+      <div className="main-content">
+        <ScrollToTop /> {/* Include ScrollToTop component */}
+        <Routes>
+          {!isLoggedIn ? 
+            <>
+              <Route path="/services" element={<Service />} />
+              <Route path="/contact" element={<Appointment />} />
+              <Route path="/about" element={<AboutUs />} />
+            </>
+          : ""}
           <Route path="/" element={<Home />} />
           <Route path="/createBike" element={<CreateBike />} />
           <Route path="/editBike/:id" element={<EditBike />} />
@@ -54,6 +55,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+
       <Footer />
       <MyCRright />
       <TopButton />

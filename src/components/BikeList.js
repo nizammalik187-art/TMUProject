@@ -41,7 +41,7 @@ const BikeList = () => {
   };
 
   // Toggle availability
-  const     handleToggleAvailability = async (id) => {
+  const handleToggleAvailability = async (id) => {
     try {
       const response = await axios.get(`https://nitinapi.onrender.com/api/toggleAvailability/${id}`);
       setBikes(
@@ -61,10 +61,10 @@ const BikeList = () => {
 
   return (
     <div className="container" style={{ marginTop: '112px' }}>
-      <h2 className="text-center">Bike Listings</h2>
+      <h2 className="text-center mb-4">Bike Listings</h2>
       <div className="table-responsive">
-        <table className="table table-striped">
-          <thead>
+        <table className="table table-striped table-hover">
+          <thead className="table-dark">
             <tr>
               <th>Image</th>
               <th>Name</th>
@@ -83,37 +83,40 @@ const BikeList = () => {
                   <img
                     src={`https://nitinapi.onrender.com/uploads/${bike.bikeImage}`}
                     alt={bike.bikeName}
-                    style={{ width: '100px', height: '60px', objectFit: 'cover' }}
+                    className="img-thumbnail"
+                    style={{ width: '80px', height: '50px', objectFit: 'cover' }}
                   />
                 </td>
                 <td>{bike.bikeName}</td>
                 <td>{bike.bikeType}</td>
                 <td>{bike.bikePrice}</td>
                 <td>{bike.bikeLocation}</td>
-                <td>{bike.bikeDescription}</td>
+                <td className="text-truncate" style={{ maxWidth: '150px' }}>
+                  {bike.bikeDescription}
+                </td>
                 <td>
                   <button
-                    className={`btn btn-sm ${
-                      bike.available ? 'btn-success' : 'btn-secondary'
-                    }`}
+                    className={`btn btn-sm ${bike.available ? 'btn-success' : 'btn-secondary'}`}
                     onClick={() => handleToggleAvailability(bike._id)}
                   >
                     {bike.available ? 'Available' : 'Unavailable'}
                   </button>
                 </td>
                 <td>
-                  <button
-                    className="btn btn-warning btn-sm me-2"
-                    onClick={() => handleEdit(bike._id)}
-                  >
-                    Edit
-                  </button>
-                  <button
-                    className="btn btn-danger btn-sm"
-                    onClick={() => handleDelete(bike._id)}
-                  >
-                    Delete
-                  </button>
+                  <div className="d-flex">
+                    <button
+                      className="btn btn-warning btn-sm me-2"
+                      onClick={() => handleEdit(bike._id)}
+                    >
+                      Edit
+                    </button>
+                    <button
+                      className="btn btn-danger btn-sm"
+                      onClick={() => handleDelete(bike._id)}
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </td>
               </tr>
             ))}

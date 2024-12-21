@@ -62,48 +62,35 @@ const BikeList = () => {
   return (
     <div className="container" style={{ marginTop: '112px' }}>
       <h2 className="text-center mb-4">Bike Listings</h2>
-      <div className="table-responsive">
-        <table className="table table-striped table-hover">
-          <thead className="table-dark">
-            <tr>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Price (₹/Day)</th>
-              <th>Location</th>
-              <th>Description</th>
-              <th>Available</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {bikes.map((bike) => (
-              <tr key={bike._id}>
-                <td>
-                  <img
-                    src={`https://nitinapi.onrender.com/uploads/${bike.bikeImage}`}
-                    alt={bike.bikeName}
-                    className="img-thumbnail"
-                    style={{ width: '80px', height: '50px', objectFit: 'cover' }}
-                  />
-                </td>
-                <td>{bike.bikeName}</td>
-                <td>{bike.bikeType}</td>
-                <td>{bike.bikePrice}</td>
-                <td>{bike.bikeLocation}</td>
-                <td className="text-truncate" style={{ maxWidth: '150px' }}>
-                  {bike.bikeDescription}
-                </td>
-                <td>
+      <div className="row">
+        {bikes.map((bike) => (
+          <div className="col-12 col-md-6 col-lg-4 mb-4" key={bike._id}>
+            <div className="card h-100">
+              <img
+                src={`https://nitinapi.onrender.com/uploads/${bike.bikeImage}`}
+                className="card-img-top"
+                alt={bike.bikeName}
+                style={{ height: '200px', objectFit: 'cover' }}
+              />
+              <div className="card-body">
+                <h5 className="card-title">{bike.bikeName}</h5>
+                <p className="card-text">
+                  <strong>Type:</strong> {bike.bikeType} <br />
+                  <strong>Price:</strong> ₹{bike.bikePrice}/day <br />
+                  <strong>Location:</strong> {bike.bikeLocation} <br />
+                  <strong>Description:</strong>{' '}
+                  <span className="text-truncate" style={{ display: 'block', maxWidth: '100%' }}>
+                    {bike.bikeDescription}
+                  </span>
+                </p>
+                <div className="d-flex justify-content-between align-items-center">
                   <button
                     className={`btn btn-sm ${bike.available ? 'btn-success' : 'btn-secondary'}`}
                     onClick={() => handleToggleAvailability(bike._id)}
                   >
                     {bike.available ? 'Available' : 'Unavailable'}
                   </button>
-                </td>
-                <td>
-                  <div className="d-flex">
+                  <div>
                     <button
                       className="btn btn-warning btn-sm me-2"
                       onClick={() => handleEdit(bike._id)}
@@ -117,11 +104,11 @@ const BikeList = () => {
                       Delete
                     </button>
                   </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

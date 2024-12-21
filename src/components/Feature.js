@@ -21,7 +21,7 @@ const Feature = () => {
             unparalleled customer service</p>
         </div>
         <div class="row g-4 justify-content-center">
-          <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+          {/* <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
             <div class="row-cols-1 feature-item p-4">
               <div class="col-12">
                 <div class="feature-icon mb-4">
@@ -80,11 +80,11 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+          {/* <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
             <a href="/" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

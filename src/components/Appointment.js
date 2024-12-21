@@ -87,9 +87,9 @@ const Appointment = () => {
                         Discover the joy of biking – exceptional rides for exceptional journeys.
                       </p>
                     </div>
-                    <div className="text-start mb-4">
+                    {/* <div className="text-start mb-4">
                       <a href="/" className="btn btn-primary rounded-pill  py-3 px-5">More Details</a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="col-sm-6">

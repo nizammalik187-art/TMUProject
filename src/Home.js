@@ -33,12 +33,13 @@ function Home() {
       <Bikes />
       <Service />
       <AboutUs />
-      <Feature />
       <Appointment />
       <ModelVideo />
-      <Team />
+      {/* <Team /> */}
       <Testimonial />
-      <Blog />
+      <Feature />
+
+      {/* <Blog /> */}
      
 
 

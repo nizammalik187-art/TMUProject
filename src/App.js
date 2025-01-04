@@ -18,12 +18,22 @@ import CreateBike from "./components/CreateBike";
 import ProtectedRoute from "./components/ProtectedRoute"; // Import the ProtectedRoute component
 import EditBike from "./components/EditBike";
 import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop component
+import { Helmet } from 'react-helmet';
 
 function App() {
   const isLoggedIn = localStorage.getItem('auth') === 'yes';
   
   return (
     <>
+      {/* Global Meta Tags */}
+      <Helmet>
+        <meta name="description" content="Rent bikes in Uttarakhand for scenic rides. Visit Nainital, Bhimtal, and Haldwani for affordable bike rentals!" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="bike rental, scooty rental, Uttarakhand, Nainital, Bhimtal, Haldwani" />
+        <meta name="author" content="Uttarakhand Bike Rentals" />
+        <title>Uttarakhand Bike Rentals</title>
+      </Helmet>
+
       <Header id='top' />
       <Navbar />
       {!isLoggedIn ? <StaticButtons /> : ""}
@@ -38,6 +48,7 @@ function App() {
               <Route path="/about" element={<AboutUs />} />
             </>
           : ""}
+
           <Route path="/" element={<Home />} />
           <Route path="/createBike" element={<CreateBike />} />
           <Route path="/editBike/:id" element={<EditBike />} />

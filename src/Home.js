@@ -9,6 +9,7 @@ import ModelVideo from './components/ModelVideo';
 import Testimonial from './components/Testimonial';
 import Blog from './components/Blog';
 import Advertisement from './components/Advertisement';
+import Bikes from './components/Bikes';
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
 
       <HeaderCarousel />
       <Advertisement />
+      <Bikes/>
       <Service />
       <AboutUs />
       <Appointment />

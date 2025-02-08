@@ -69,7 +69,7 @@ const BikeList = () => {
           <div className="col-12 col-md-6 col-lg-4 mb-4" key={bike._id}>
             <div className="card h-100">
               <img
-                src={`https://nitinapi.onrender.com/uploads/${bike.bikeImage}`}
+                src={bike.bikeImage}
                 className="card-img-top"
                 alt={bike.bikeName}
                 style={{ height: '200px', objectFit: 'cover' }}

@@ -1293,4 +1293,27 @@ body {
     flex-shrink: 0;
     padding: 1.25rem;
   }
+  .bike-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bike-img img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .bike-content {
+    max-height: 300px;
+    overflow: hidden;
+  }
+  
+  .bike-content-inner p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
   

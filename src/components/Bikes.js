@@ -16,6 +16,13 @@ const Bikes = () => {
     fetchBike();
   }, []);
 
+  const truncateText = (text, maxLength) => {
+    if (text.length > maxLength) {
+      return `${text.substring(0, maxLength)}...`;
+    }
+    return text;
+  };
+
   return (
     <div className="container-fluid service py-5">
       <div className="container py-5">
@@ -30,7 +37,7 @@ const Bikes = () => {
               <div className="bike-card rounded">
                 <div className="bike-img rounded-top">
                   <img
-                    src={`https://nitinapi.onrender.com/uploads/${bike.bikeImage}`}
+                    src={bike.bikeImage}
                     className="img-fluid rounded-top w-100"
                     alt={bike.bikeName}
                   />
@@ -38,7 +45,7 @@ const Bikes = () => {
                 <div className="bike-content rounded-bottom bg-light p-4">
                   <div className="bike-content-inner">
                     <h5 className="mb-4">{bike.bikeName}</h5>
-                    <p className="mb-4">{bike.bikeDescription}</p>
+                    <p className="mb-4">{truncateText(bike.bikeDescription, 100)}</p>
                     <p className="mb-2"><strong>Price:</strong> ₹{bike.bikePrice}/day</p>
                     <p className="mb-2"><strong>Location:</strong> {bike.bikeLocation}</p>
                     <p className={`mb-4 ${bike.available ? 'text-success' : 'text-danger'}`}>

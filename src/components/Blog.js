@@ -8,7 +8,7 @@ const Blog = () => {
           <div class="sub-style">
             <h4 class="sub-title px-3 mb-0">Our Blog</h4>
           </div>
-          <h1 class="display-3 mb-4">Excellent Facility and High Quality Therapy</h1>
+          <h1 class="display-3 mb-4">Premium Bike Rentals for Every Adventure   </h1>
           <p class="mb-0">Explore the city on two wheels with our top-notch bike rentals. Whether you're a local or a visitor, our bikes are perfect for discovering new places and enjoying the ride. Choose from a variety of models and experience the freedom of cycling!</p>
         </div>
         <div class="row g-4 justify-content-center">
@@ -22,8 +22,8 @@ const Blog = () => {
                   <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
                   <a href="/" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
                 </div>
-                <a href="/" class="h4">Remove back Pain While Working on o physio</a>
-                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
+                <a href="/" class="h4">Explore Nanitaal</a>
+                <p class="my-4">Discover the Nanitaal like never before with our high-quality bike rentals,</p>
                 <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
               </div>
             </div>
@@ -38,8 +38,8 @@ const Blog = () => {
                   <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
                   <a href="/" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
                 </div>
-                <a href="/" class="h4">Benefits of a weekly physiotherapy session</a>
-                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
+                <a href="/" class="h4">Explore Bheamtaal</a>
+                <p class="my-4">Discover the city like never before with our high-quality bike rentals,</p>
                 <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
               </div>
             </div>
@@ -54,8 +54,8 @@ const Blog = () => {
                   <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
                   <a href="/" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
                 </div>
-                <a href="/" class="h4">Regular excercise can slow ageing process</a>
-                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
+                <a href="/" class="h4">Explore Haldwani</a>
+                <p class="my-4">Discover the city like never before with our high-quality bike rentals,</p>
                 <a href="/" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
               </div>
             </div>

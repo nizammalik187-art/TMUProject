@@ -32,7 +32,7 @@ const HeaderCarousel = () => {
   return (
     <OwlCarousel className="header-carousel owl-carousel" {...options}>
       <div className="header-carousel-item">
-        <img src="img/carousel-1.jpg" className="img-fluid w-100" alt="Image" />
+        <img src="img/carousel-1.jpg" className="img-fluid w-100" alt="Well-maintained rental bike ready for hire with flexible pricing" />
         <div className="carousel-caption">
           <div className="carousel-caption-content p-3">
             <h5
@@ -57,7 +57,7 @@ const HeaderCarousel = () => {
         </div>
       </div>
       <div className="header-carousel-item">
-        <img src="img/carousel-2.jpg" className="img-fluid w-100" alt="Image" />
+        <img src="img/carousel-2.jpg" className="img-fluid w-100" alt="Well-maintained rental bike ready for hire with flexible pricing" />
         <div className="carousel-caption">
           <div className="carousel-caption-content p-3">
             <h5
@@ -82,7 +82,7 @@ const HeaderCarousel = () => {
         </div>
       </div>
       <div className="header-carousel-item">
-        <img src="img/carousel-3.jpg" className="img-fluid w-100" alt="Image" />
+        <img src="img/carousel-3.jpg" className="img-fluid w-100" alt="Well-maintained rental bike ready for hire with flexible pricing" />
         <div className="carousel-caption">
           <div className="carousel-caption-content p-3">
             <h5
@@ -106,7 +106,7 @@ const HeaderCarousel = () => {
           </div>
         </div>
       </div> <div className="header-carousel-item">
-        <img src="img/carousel-4.jpg" className="img-fluid w-100" alt="Image" />
+        <img src="img/carousel-4.jpg" className="img-fluid w-100" alt="Well-maintained rental bike ready for hire with flexible pricing" />
         <div className="carousel-caption">
           <div className="carousel-caption-content p-3">
             <h5
@@ -130,7 +130,7 @@ const HeaderCarousel = () => {
           </div>
         </div>
       </div> <div className="header-carousel-item">
-        <img src="img/carousel-5.jpg" className="img-fluid w-100" alt="Image" />
+        <img src="img/carousel-5.jpg" className="img-fluid w-100" alt="Wide range of premium bikes available for rent at competitive prices" />
         <div className="carousel-caption">
           <div className="carousel-caption-content p-3">
             <h5

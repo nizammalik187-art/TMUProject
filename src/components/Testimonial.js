@@ -42,7 +42,7 @@ const Testimonial = () => {
           <div className="testimonial-item">
             <div className="testimonial-inner p-5">
               <div className="testimonial-inner-img mb-4">
-                <img src="img/testimonial-img.jpg" className="img-fluid rounded-circle" alt="Client" />
+                <img src="img/testimonial-img.jpg" className="img-fluid rounded-circle" alt="Wide range of premium bikes available for rent at competitive prices" />
               </div>
               <p className="text-white fs-7">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
@@ -63,7 +63,7 @@ const Testimonial = () => {
           <div className="testimonial-item">
             <div className="testimonial-inner p-5">
               <div className="testimonial-inner-img mb-4">
-                <img src="img/testimonial-img.jpg" className="img-fluid rounded-circle" alt="Client" />
+                <img src="img/testimonial-img.jpg" className="img-fluid rounded-circle" alt="Wide range of premium bikes available for rent at competitive prices" />
               </div>
               <p className="text-white fs-7">
                 Best bike in whole world

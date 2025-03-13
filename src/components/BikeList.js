@@ -71,7 +71,7 @@ const BikeList = () => {
               <img
                 src={bike.bikeImage}
                 className="card-img-top"
-                alt={bike.bikeName}
+                alt={`${bike.bikeName} - ${bike.bikeType} available for rent in ${bike.bikeLocation}`}
                 style={{ height: '200px', objectFit: 'cover' }}
               />
               <div className="card-body">

@@ -7,7 +7,7 @@ const AboutUs = () => {
         <div class="row g-5 align-items-center">
           <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
             <div class="about-img pb-5 ps-5">
-              <img src="img/about-1.jpg" class="img-fluid rounded w-100" style={{ objectFit: 'cover' }} alt="Image" />
+              <img src="img/about-1.jpg" class="img-fluid rounded w-100" style={{ objectFit: 'cover' }} alt="Premium rental bike parked on a scenic road, available for hire" />
               <div class="about-img-inner">
                 {/* <img src="img/about-1.jpg" class="img-fluid rounded-circle w-100 h-100" alt="Image" /> */}
               </div>

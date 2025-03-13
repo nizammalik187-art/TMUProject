@@ -94,7 +94,7 @@ const Appointment = () => {
                 </div>
                 <div className="col-sm-6">
                   <div className="video h-100">
-                    <img src="img/service-2.jpg" className="img-fluid rounded w-100 h-100" style={{ objectFit: 'cover' }} alt="Service" />
+                    <img src="img/service-2.jpg" className="img-fluid rounded w-100 h-100" style={{ objectFit: 'cover' }} alt="Well-maintained rental bike ready for hire with flexible pricing" />
                   </div>
                 </div>
               </div>

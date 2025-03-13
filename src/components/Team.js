@@ -15,7 +15,7 @@ const Team = () => {
           <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
               <div class="team-img rounded-top h-100">
-                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="" />
+                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="Wide range of premium bikes available for rent at competitive prices" />
                 <div class="team-icon d-flex justify-content-center">
                   <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                   <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -32,7 +32,7 @@ const Team = () => {
           <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
               <div class="team-img rounded-top h-100">
-                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="" />
+                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="Wide range of premium bikes available for rent at competitive prices" />
                 <div class="team-icon d-flex justify-content-center">
                   <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                   <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -49,7 +49,7 @@ const Team = () => {
           <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
               <div class="team-img rounded-top h-100">
-                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="" />
+                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="Wide range of premium bikes available for rent at competitive prices" />
                 <div class="team-icon d-flex justify-content-center">
                   <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                   <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -66,7 +66,7 @@ const Team = () => {
           <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item rounded">
               <div class="team-img rounded-top h-100">
-                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="" />
+                <img src="img/team-1.jpg" class="img-fluid rounded-top w-100" alt="Wide range of premium bikes available for rent at competitive prices" />
                 <div class="team-icon d-flex justify-content-center">
                   <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                   <a class="btn btn-square btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>

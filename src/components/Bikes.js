@@ -70,7 +70,7 @@ const Bikes = () => {
                     <img
                       src={bike.bikeImage}
                       className="img-fluid rounded-top w-100"
-                      alt={bike.bikeName}
+                      alt={`${bike.bikeName} - ${bike.bikeType} available for rent in ${bike.bikeLocation}`}
                       loading="lazy"
                     />
                   </div>

@@ -60,23 +60,49 @@
 </script>
   
   <!-- Structured Data JSON-LD -->
+  
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org/",
-      "@type": "LocalBusiness",
-      "name": "Uttarakhand Bike Rentals",
-      "url": "https://www.uttarakhandbikerental.in/",
+      "@context": "https://schema.org",
+      "@type": "RentalBusiness",
+      "name": "Uttarakhand Bike Rental",
+      "image": "https://uttarakhandbikerental.in/logo.png",
+      "@id": "",
+      "url": "https://uttarakhandbikerental.in/",
+      "telephone": "+91 9389691797",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Bike Lane",
-        "addressLocality": "Haldwani",
-        "addressRegion": "Uttarakhand",
-        "postalCode": "263139"
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Kathgodam",
+        "addressRegion": "UK",
+        "postalCode": "263126",
+        "addressCountry": "IN"
       },
-      "description": "Rent bikes easily with our bike rental app. Explore Uttarakhand's scenic routes with us.",
-      "telephone": "+91 8193852681"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.2742,
+        "longitude": 79.5435
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/uttarakhandbikerental",
+        "https://www.instagram.com/uttarakhandbikerental"
+      ]
     }
-  </script>
+    </script>
 </head>
 
 <body>
@@ -87,7 +113,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <div id="root"></div>
 <!-- Structured Data JSON-LD -->
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>

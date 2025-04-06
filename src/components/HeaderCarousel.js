@@ -12,8 +12,8 @@ const options = {
   autoplay: true,
   autoplayTimeout: 5000,
   navText: [
-    "<button class='owl-prev'><span class='carousel-control-prev-icon'></span></button>",
-    "<button class='owl-next'><span class='carousel-control-next-icon'></span></button>",
+    "<span class='carousel-control-prev-icon'></span>",
+    "<span class='carousel-control-next-icon'></span>",
   ],
   responsive: {
     0: {

@@ -15,7 +15,7 @@ const Blog = () => {
           <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="blog-item rounded">
               <div class="blog-img">
-                <img src="img/blog-1.jpg" class="img-fluid w-100" alt="Image" />
+                <img src="img/blog-1.jpg" class="img-fluid w-100" alt="kcg" />
               </div>
               <div class="blog-centent p-4">
                 <div class="d-flex justify-content-between mb-4">
@@ -31,7 +31,7 @@ const Blog = () => {
           <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="blog-item rounded">
               <div class="blog-img">
-                <img src="img/blog-2.jpg" class="img-fluid w-100" alt="Image" />
+                <img src="img/blog-2.jpg" class="img-fluid w-100" alt="kll" />
               </div>
               <div class="blog-centent p-4">
                 <div class="d-flex justify-content-between mb-4">
@@ -47,7 +47,7 @@ const Blog = () => {
           <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
             <div class="blog-item rounded">
               <div class="blog-img">
-                <img src="img/blog-3.jpg" class="img-fluid w-100" alt="Image" />
+                <img src="img/blog-3.jpg" class="img-fluid w-100" alt="pol" />
               </div>
               <div class="blog-centent p-4">
                 <div class="d-flex justify-content-between mb-4">

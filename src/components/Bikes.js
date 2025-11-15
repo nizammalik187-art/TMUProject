@@ -87,7 +87,7 @@ const Bikes = () => {
                       <p className={`mb-4 ${bike.available ? "text-success" : "text-danger"}`}>
                         <strong>Status:</strong> {bike.available ? "Available" : "Not Available"}
                       </p>
-                      <a className="btn btn-primary rounded-pill text-white py-2 px-4 mb-2" href={`tel:+919389691797`}>
+                      <a className="btn btn-primary rounded-pill text-white py-2 px-4 mb-2" href={`tel:+919634583400`}>
                         Rent Now
                       </a>
                     </div>

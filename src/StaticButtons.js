@@ -1,8 +1,8 @@
 import React from "react";
 
 const StaticButtons = () => {
-  const phoneNumber = "+919389691797";  // Replace with your phone number
-  const whatsappNumber = "+919389691797";  // Replace with your WhatsApp number
+  const phoneNumber = "+919634583400";  // Replace with your phone number
+  const whatsappNumber = "+919634583400";  // Replace with your WhatsApp number
   const message = "Hello! I’m interested in renting a bike from your service. Could you provide me with more details on the available options, pricing, and booking process? Thank you!";
   const instagramUrl = "https://www.instagram.com/uttarakhand_bike_rental/profilecard"; 
   return (

@@ -44,7 +44,7 @@ const Appointment = () => {
     const encodedMessage = encodeURIComponent(message);
 
     // WhatsApp link
-    const whatsappUrl = `https://wa.me/8193852681?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/9634583400?text=${encodedMessage}`;
 
     // Redirect to WhatsApp with the pre-filled message
     window.open(whatsappUrl, '_blank');

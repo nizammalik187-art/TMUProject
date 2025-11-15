@@ -40,7 +40,7 @@ const Footer = () => {
               <h4 className="mb-3 text-white">Contact Info</h4>
               <a href=""><i className="fa fa-map-marker-alt me-2"></i>Haldwani,Uttarakhand</a>
               <a href=""><i className="fas fa-envelope me-2"></i> info@example.com</a>
-              <a href=""><i className="fas fa-phone me-2"></i> +91 9389691797</a>
+              <a href=""><i className="fas fa-phone me-2"></i> +91 9634583400</a>
             </div>
           </div>
         </div>
